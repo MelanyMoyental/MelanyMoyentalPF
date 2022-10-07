@@ -1,0 +1,48 @@
+/* USO DE MEDIAQURIES */
+@media screen and (max-width: 768px) {
+    .mediabody{
+        grid-template-rows: repeat(5,auto);
+    }
+    .img-inicio{
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(3,auto);
+        }
+    .primeraparte {
+            display: grid;
+            grid-template-rows: repeat(3.100px);
+            grid-template-columns: auto;
+        }
+    .segundaparte{
+            display: grid;
+            grid-template-rows: repeat(3.100px);
+            grid-template-columns: auto;
+        }
+    nav ul li a{
+        display: grid;
+        grid-template-columns:100% ;
+    }
+    .container-footer{
+        display: grid;
+        grid-template-rows: repeat(5,auto);
+        grid-template-columns: auto;
+        height: auto;
+        margin: 15px;
+        padding: 7px;
+        .item5{
+            margin-top: 7px;
+            margin-left: 5px;
+        }
+    }
+
+    .nav-micuenta nav ul li a{
+        display: grid;
+        grid-template-columns:100%;
+        margin: 0%;
+    }
+
+    .nav-registrate li a{
+        display: grid;
+        grid-template-columns:100%;
+        margin: 0%;
+    }
+    }

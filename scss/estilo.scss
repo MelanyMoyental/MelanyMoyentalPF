@@ -1,0 +1,361 @@
+@import "colores";
+
+*{
+    background-color: $color-negro;
+    color: $color-blanco;
+}
+
+.header-subtitulo{
+    text-align: center;
+
+    p{
+        font-size: 35px;
+        background-color: $color-oscuro;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        width: auto;
+        transition-duration: 1s;
+    }
+}
+
+.header-subtitulo p:hover{
+    background-color: $color-claro;
+    color: $color-negro;
+}
+
+.header-titulo{
+    font-size: 45px;
+    color:$color-claro;
+    text-align: center;
+    transition: all 2s;
+    margin-top: 15px;
+    &:hover{
+        height: 90px;
+        font-size: 60px;
+        color:$color-blanco;
+        padding-top: 25px;
+        }
+}
+
+ul{
+    list-style: none;
+    padding:0px;
+    margin-top: 35px;
+
+    li{
+        display: inline-block;
+    }
+    a{
+        text-decoration: none;
+        color: $color-negro;
+        padding: 12px;
+        margin-left: 3px;
+        background-color: $color-claro;
+    }
+}
+
+.button{
+   display:inline-block;
+   list-style: none;
+   margin-top: 25px;
+   a{
+    text-decoration: none;
+    color: $color-negro;
+    padding: 12px;
+    padding-left: 172px;
+    background-color: $color-claro;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   }
+}
+
+.img-inicio {
+    grid-area: inicio;
+    text-align: center;
+    margin-top: 10px;
+}
+
+img {
+    width: 8cm;
+    height: 7cm;
+    margin-top: 60px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    border: solid 3px $color-claro;
+}
+
+/* ANIMACI/TRANS/TRANSI PARA LAS IMAGENES */
+
+.imgadr:hover{
+    transform: translate(0px,-50px);
+    border: solid 3px $color-blanco;
+}
+
+.imgadr{
+    transition: all 2s;
+    border: solid 2px $color-claro;
+}
+
+.imgtal:hover{
+    transform: translate(0px,-50px);
+    border: solid 2px $color-blanco;
+}
+
+.imgtal{
+    transition: all 2s;
+    border: solid 2px $color-claro;
+}
+
+.imgmin:hover{
+    transform: translate(0px,-50px);
+    border: solid 3px $color-blanco;
+}
+
+.imgmin{
+    transition: all 2s;
+    border: solid 2px $color-claro;
+}
+
+// SECTION CON GRID Y FLEX
+
+
+.grid-container {
+    display: grid;
+    background-color: $color-negro;
+    grid-template-areas:'inicio'
+                        'primeraparte'
+                        'segundaparte'
+                        'footer'
+}
+
+.primeraparte{
+    grid-area: primeraparte;
+    background-color: $color-negro;
+}
+.segundaparte{
+    grid-area: segundaparte;
+    background-color: $color-negro;
+}
+
+.primeraparte {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.segundaparte{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom:8px;
+}
+
+
+p{
+    margin-left: 9px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 25px;
+}
+
+// SERVICIOS
+
+.header-titulo2{
+    font-size: 25px;
+    color:$color-claro;
+    text-align: center;
+    transition: all 2s;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    &:hover{
+        height: 25px;
+        font-size: 25px;
+        color:$color-blanco;
+        padding-top: 15px;
+        }
+}
+
+.header-servicios{
+    padding-bottom: 55px;
+}
+
+.main-servicios{
+    padding-bottom: 55px;
+}
+// CONTACTO
+
+.header-titulo3{
+    font-size: 32px;
+    color:$color-claro;
+    text-align: center;
+    transition: all 3s;
+    margin-top: 15px;
+    padding-top: 25px;
+    margin-bottom: 25px;
+    &:hover{
+        height: 70px;
+        font-size: 38px;
+        color:$color-blanco;
+        padding-top: 25px;
+        margin-bottom: 7px;
+        }
+}
+
+.servicios-msj{
+    text-align: center;
+    font-size: 22px;
+    p{
+        padding-top: 75px;
+        color: $color-claro;
+    }
+}
+
+.formulario-contacto{
+    display: grid;
+    justify-content: center;
+    margin-top: 35px;
+    padding-bottom: 95px;
+    padding-top: 25px;
+    overflow-x: auto;
+    .mb-3{
+        width: 395px;
+    }
+}
+
+// MICUENTA
+
+.formulario-micuenta{
+    display: flex;
+    justify-content: center;
+    padding: 55px;
+}
+
+.subtitulo-micuenta{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 45px;
+    margin-bottom: 3px;
+    color: $color-oscuro;
+}
+
+.nav-micuenta{
+    overflow-x: none;
+    padding: 5px; 
+}
+
+.header-titulo4{
+    font-size: 25px;
+    color:$color-claro;
+    text-align: center;
+    transition: all 2s;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    &:hover{
+        height: 25px;
+        font-size: 25px;
+        color:$color-blanco;
+        padding-top: 15px;
+        }
+}
+
+// COMPRAS
+
+
+.button-comprar1{
+    display: flex;
+    justify-content: center;
+}
+.button-comprar2{
+    width: 115px;
+    display: flex;
+    padding: 18px;
+    margin-top: 12px;
+    margin-left: 245px;
+    border: solid 3px $color-blanco;
+    color: $color-blanco;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.button-comprar2:hover{
+    background-color: $color-oscuro;
+    box-shadow: 0 0 40px $color-intermedio;
+}
+
+.container-compras{
+    display: flex;
+    margin-top: 75px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    .col{
+        padding: 22px;
+        height: 2px;
+        color: $color-negro;
+        background-color: $color-blanco;
+        width: 245px;
+        border: solid 1px $color-negro;
+        margin-bottom: 45px;
+    }
+}
+
+.main-compras{
+    margin-bottom: 55px;
+}
+
+.container-compras2{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    .col{
+        padding: 35px;
+        color: $color-negro;
+        background-color: $color-blanco;
+        width: 225px;
+        border: solid 1px $color-negro
+    }
+}
+
+.form-select{
+    width: 255px;
+    option{
+        text-align: center;
+    }
+
+}
+
+.primeraparte__contenido{
+    border: solid 1px $color-blanco;
+    height:  515px;
+    margin-bottom: 85px;
+    p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+}
+
+// FOOTER
+
+@import "footer";
+
+// REGISTRATE
+
+.nav-registrate{
+    padding: 5px;
+}
+
+.form-registrate{
+    display: grid;
+    justify-content: center;
+    width: auto;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    padding-left: 12px;
+    
+}
+
+// MEDIA QUERIES GRID Y FLEX
+
+@import "media";
